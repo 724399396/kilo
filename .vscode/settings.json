@@ -1,3 +1,10 @@
 {
-	"makefile.extensionOutputFolder": "./.vscode"
+	"makefile.extensionOutputFolder": "./.vscode",
+	"makefile.launchConfigurations": [
+		{
+			"cwd": "/home/weili/work/learning/kilo",
+			"binaryPath": "/home/weili/work/learning/kilo/kilo",
+			"binaryArgs": ["kilo.c"]
+		}
+	]
 }

@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 18 17:23:04 2021
+# Make data base, printed on Mon Jun 21 09:56:42 2021
 
 # Variables
 
@@ -28,6 +30,8 @@ XDG_SESSION_TYPE = x11
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -41,11 +45,11 @@ CURDIR := /home/weili/work/learning/kilo
 # makefile
 SHELL = /bin/sh
 # environment
-VTE_VERSION = 6003
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:58989
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 9:58660
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -59,7 +63,7 @@ JAVA_HOME = /home/weili/program/jdk
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 1
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # environment
 QT_IM_MODULE = fcitx
 # environment
@@ -77,19 +81,15 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 PERL_MM_OPT = INSTALL_BASE=/home/weili/perl5
 # environment
-DISPLAY = :0
-# environment
-_ = /usr/bin/code
-# environment
-MANAGERPID = 3140
+MANAGERPID = 3123
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c39634a6-db5a-460e-af91-d80e0ce311d4.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-00ac1753-8d8c-418b-b135-d63a13e82537.sock
 # environment
 LC_NAME = zh_CN.UTF-8
 # environment
-VSCODE_CWD = /home/weili/work/lingrit/guandu/guandu_credit_html
+VSCODE_CWD = /home/weili
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -97,9 +97,11 @@ NO_PROXY = 127.0.0.1,localhost
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/weili:@/tmp/.ICE-unix/3418,unix/weili:/tmp/.ICE-unix/3418
+SESSION_MANAGER = local/weili:@/tmp/.ICE-unix/3367,unix/weili:/tmp/.ICE-unix/3367
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -117,23 +119,23 @@ XDG_MENU_PREFIX = gnome-
 # environment
 VSCODE_LOG_STACK = false
 # environment
-all_proxy = socks://127.0.0.1:1080/
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=25dea5b1-7118-4d14-92e4-c06ec11587ca&iid=25dea5b1-7118-4d14-92e4-c06ec11587ca&sid=25dea5b1-7118-4d14-92e4-c06ec11587ca","uploadToServer":true}
 # environment
-INVOCATION_ID = 4a90af3cfa86410e81891aa25f0b1a2f
+INVOCATION_ID = 5ae3c216d4484f10a7e046b38b111dcf
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4178
 # automatic
 %F = $(notdir $%)
 # environment
-HTTPS_PROXY = http://127.0.0.1:8118/
+DISPLAY = :0
 # environment
 no_proxy = 127.0.0.1,localhost
 # environment
@@ -147,7 +149,7 @@ PWD = /home/weili/work/learning/kilo
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 3354
+SSH_AGENT_PID = 3311
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -160,8 +162,6 @@ HOME = /home/weili
 PERL_MB_OPT = --install_base "/home/weili/perl5"
 # environment
 PERL_LOCAL_LIB_ROOT = /home/weili/perl5
-# environment
-VSCODE_CLI = 1
 # environment
 PERL5LIB = /home/weili/perl5/lib/perl5
 # environment
@@ -182,8 +182,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 LC_TIME = zh_CN.UTF-8
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -191,7 +189,7 @@ MAKECMDGOALS := all
 # environment
 PATH = /home/weili/perl5/bin:/home/weili/.nvm/versions/node/v10.24.1/bin:/home/weili/.local/bin:/home/weili/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/weili/program/jdk/bin:/home/weili/program/maven/bin:/home/weili/.local/bin:/home/weili/.cabal/bin:/home/weili/.yarn/bin:/home/weili/program/mewchan/bin:/usr/local/go/bin:/home/weili/.fzf/bin:/home/weili/anaconda3/bin:/home/weili/work/go/bin
 # environment
-SHLVL = 1
+SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -241,10 +239,6 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = zh_CN.UTF-8
 # environment
-HTTP_PROXY = http://127.0.0.1:8118/
-# environment
-LC_IDENTIFICATION = zh_CN.UTF-8
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
@@ -255,8 +249,6 @@ LC_NUMERIC = zh_CN.UTF-8
 # automatic
 <F = $(notdir $<)
 # environment
-https_proxy = http://127.0.0.1:8118/
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
 LC_MEASUREMENT = zh_CN.UTF-8
@@ -265,20 +257,11 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=25dea5b1-7118-4d14-92e4-c06ec11587ca&iid=25dea5b1-7118-4d14-92e4-c06ec11587ca&sid=25dea5b1-7118-4d14-92e4-c06ec11587ca","uploadToServer":true}
-# environment
 QT4_IM_MODULE = fcitx
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a62e603f_f274_48d9_a940_1a2d43d4e6d3
 # automatic
 ^F = $(notdir $^)
- 
-make: *** No rule to make target 'all'.  Stop.
- 
-# environment
-GNOME_TERMINAL_SERVICE = :1.79
 # default
 SUFFIXES := 
 # environment
@@ -288,23 +271,18 @@ WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-ALL_PROXY = socks://127.0.0.1:1080/
+LC_IDENTIFICATION = zh_CN.UTF-8
 # default
 .RECIPEPREFIX := 
-# environment
-http_proxy = http://127.0.0.1:8118/
 # environment
 LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
+ 
 # environment
-TERM = xterm-256color
-# environment
-VSCODE_PID = 40696
+VSCODE_PID = 4178
 # variable set hash-table stats:
-# Load=145/1024=14%, Rehash=0, Collisions=30/170=18%
+# Load=134/1024=13%, Rehash=0, Collisions=23/159=14%
 
 # Pattern-specific Variable Values
 
@@ -332,7 +310,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-06-16 09:50:01.509952218
+#  Last modified 2021-06-21 09:56:39.597813919
 #  File has been updated.
 #  Successfully updated.
 
@@ -347,7 +325,7 @@ kilo: kilo.c
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	$(CC) kilo.c -o kilo -Wall -Wextra -pedantic -std=c99
+	$(CC) kilo.c -o kilo -g -Wall -Wextra -pedantic -std=c99
 
 # Not a target:
 kilo.c:
@@ -369,6 +347,6 @@ kilo.c:
 # strcache performance: lookups = 20 / hit rate = 35%
 # hash-table stats:
 # Load=13/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Fri Jun 18 17:23:04 2021
+# Finished Make data base on Mon Jun 21 09:56:42 2021
 
  

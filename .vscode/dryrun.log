@@ -1,5 +1,5 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/weili/work/learning/kilo'
-cc kilo.c -o kilo -Wall -Wextra -pedantic -std=c99
+make: 'kilo' is up to date.
 make: Leaving directory '/home/weili/work/learning/kilo'
  
