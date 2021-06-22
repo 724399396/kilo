@@ -6,5 +6,11 @@
 			"binaryPath": "/home/weili/work/learning/kilo/kilo",
 			"binaryArgs": ["kilo.c"]
 		}
-	]
+	],
+	"files.associations": {
+		"*.cjson": "jsonc",
+		"*.wxss": "css",
+		"*.wxs": "javascript",
+		"time.h": "c"
+	}
 }
